@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="container">
+            <h1>
+                Bat-Ball-Stump Game
+            </h1>
+            <div class="button">
+                <button onclick="
+               let computerChoice= generateComputerChoice(); 
+                let resultMsg =getResult('Bat', computerChoice);
+               let= showResult('Bat',computerChoice,resultMsg);
+                ">Bat</button>
+
+                <button onclick="
+            computerChoice= generateComputerChoice(); 
+            resultMsg =getResult('Ball', computerChoice);
+            showResult('Ball',computerChoice,resultMsg);
+            ">Ball</button>
+
+                <button onclick="
+            computerChoice= generateComputerChoice(); 
+            resultMsg =getResult('Stump', computerChoice);
+            showResult('Stump',computerChoice,resultMsg);
+            ">Stump</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
